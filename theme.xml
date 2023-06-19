@@ -6185,7 +6185,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
         <data:post.author.name/>
       </span>
     </a>
-  </div> -->
+  </div> --> 
   <div>
     <span class='author-desc'>
       <data:post.author.aboutMe/>
