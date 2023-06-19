@@ -5571,10 +5571,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
     <!-- Google Analytics -->
     <b:include data='blog' name='google-analytics'/>
 
-    <!-- Custom CSS Styling -->
-    <link href='https://raw.githubusercontent.com/ncaanext/ncaanext-website/main/assets/css/style.css' rel='stylesheet'/>
-
-
+   
 </head>
 <body expr:class='data:blog.pageType'>
   <b:class cond='data:view.isHomepage' name='home'/>
