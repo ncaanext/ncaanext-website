@@ -2514,15 +2514,17 @@ a.read-more span {
 }
  .post-labels a{
     float:left;
-    height:22px;
+    height: 1.8rem;
     background-color:#fdfdff;
     color:$(title.color);
-    font-size:12px;
-    line-height:22px;
+    font-family: 'Graduate';
+    font-size: 0.9rem;
+    line-height: 2;
     font-weight:400;
+    text-transform: uppercase;
     margin:0;
     padding:0 10px;
-    border:1px solid #f2f2f6;
+    border:1px solid $(main.color);
     border-radius:3px;
     margin:0 5px 0 0;
     transition:all .17s ease
