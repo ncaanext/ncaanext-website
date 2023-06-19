@@ -1115,7 +1115,8 @@ font-weight:900;
  .mobile-menu #main-menu-nav > li > a{
     text-transform:uppercase;
     font-weight:700;
-    font-size:1rem
+    font-size:1rem;
+    font-family: 'Graduate';
 }
  .mobile-menu ul li.has-sub .submenu-toggle{
     position:absolute;
