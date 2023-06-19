@@ -42,10 +42,10 @@ Author Url:  https://www.templatesyard.com/
 </Group>
  
 <!-- Extra Variables -->
-<Variable name="body.text.font" description="Font" hideEditor="true" type="font" default="13px Fira Sans, sans-serif"  value="13px Fira Sans, sans-serif"/>
-<Variable name="title.font" description="Title Font" hideEditor="true" type="font" default="13px Fira Sans, sans-serif"  value="13px Fira Sans, sans-serif"/>
+<Variable name="body.text.font" description="Font" hideEditor="true" type="font" default="1rem Fira Sans, sans-serif"  value="1rem Fira Sans, sans-serif"/>
+<Variable name="title.font" description="Title Font" hideEditor="true" type="font" default="1rem Fira Sans, sans-serif"  value="1rem Fira Sans, sans-serif"/>
 <Variable name="posts.background.color" description="Post background color" hideEditor="true" type="color" default="#ffffff"  value="#ffffff"/>
-<Variable name="tabs.font" description="Font 2" hideEditor="true" type="font" default="13px Fira Sans, sans-serif"  value="13px Fira Sans, sans-serif"/>
+<Variable name="tabs.font" description="Font 2" hideEditor="true" type="font" default="1rem Fira Sans, sans-serif"  value="1rem Fira Sans, sans-serif"/>
 <Variable name="posts.title.color" description="Post title color" hideEditor="true" type="color" default="#000000"  value="#000000"/>
 <Variable name="posts.text.color" description="Post text color" hideEditor="true" type="color" default="#656565"  value="#1e1e1e"/>
 <Variable name="posts.icons.color" description="Post icons color" hideEditor="true" type="color" default="$(main.color)"  value="#3c5a98"/>
@@ -739,7 +739,7 @@ display:none;
  #main-menu ul > li > ul > li a{
     display:block;
     height:36px;
-    font-size:13px;
+    font-size:1rem;
     color:$(submenu.color);
     font-weight:500;
     line-height:36px;
@@ -819,9 +819,9 @@ display:none;
 }
  .mega-content .post-title{
     position:relative;
-    font-size:13px;
+    font-size:1rem;
     font-weight:600;
-    line-height:1.5em;
+    line-height:1.5;
     margin:7px 0 5px;
     padding:0
 }
@@ -990,7 +990,7 @@ font-weight:900;
     width:calc(100% - 50px);
     height:50px;
     font-family:inherit;
-    font-size:13px;
+    font-size:1rem;
     font-weight:400;
     color:$(menu.color);
     box-sizing:border-box;
@@ -1012,7 +1012,7 @@ font-weight:900;
     display:block;
     width:calc(100% - 50px);
     height:50px;
-    font-size:13px;
+    font-size:1rem;
     font-weight:400;
     color:$(menu.color);
     box-sizing:border-box;
@@ -1102,7 +1102,7 @@ font-weight:900;
  .mobile-menu #main-menu-nav > li > a{
     text-transform:uppercase;
     font-weight:700;
-    font-size:13px
+    font-size:1rem
 }
  .mobile-menu ul li.has-sub .submenu-toggle{
     position:absolute;
@@ -1117,7 +1117,7 @@ font-weight:900;
     font-weight:400;
     float:right;
     width:34px;
-    font-size:16px;
+    font-size:1rem;
     text-align:center;
     transition:all .17s ease
 }
@@ -1125,7 +1125,7 @@ font-weight:900;
     transform:rotate(90deg)
 }
  .mobile-menu > ul > li > ul > li a{
-    font-size:13px
+    font-size:1rem
 }
  .mobile-menu > ul > li > ul > li > a{
     color:#ffffff;
@@ -1643,7 +1643,7 @@ box-sizing: border-box;
     float: left;
     width: 100%;
     position:relative;
-    font-size:13px;
+    font-size:1rem;
     display:block;
     overflow:hidden;
     min-height:100px;
@@ -1927,7 +1927,7 @@ display: flex;
    display: flex;
     width: -moz-fit-content;
     width: fit-content;
-    font-size: 13px;
+    font-size: 0.85rem;
     font-weight: 500;
     padding:0;
     margin: 0;
@@ -1943,7 +1943,7 @@ display: flex;
     text-transform:capitalize;display: flex;
     width: -moz-fit-content;
     width: fit-content;
-    font-size: 13px;
+    font-size: 0.85rem;
     font-weight: 500;
     padding: 0;
     margin: 0;
@@ -1980,7 +1980,7 @@ display: flex;
  .hot-posts .item-0 .post-title, .PopularPosts .hot-posts .item-0 .post-title {
      font-size:26px;
     margin:0;
-  line-height:1.5em;
+  line-height:1.5;
 }
  .hot-posts .post-title a, .PopularPosts .hot-posts .post-title a{
     color:$(title.color);
@@ -2094,7 +2094,7 @@ border-width: 0 0 1px 0;
     overflow:hidden;
     background-color:#fff;
     color:$(title.color);
-    font-size:13px;
+    font-size:1rem;
     font-weight:400;
     padding:8px 10px;
     margin:0 0 25px;
@@ -2124,7 +2124,7 @@ border-width: 0 0 1px 0;
     opacity:.8
 }
  .queryEmpty{
-    font-size:13px;
+    font-size:1rem;
     font-weight:400;
     padding:10px 0;
     margin:0 0 25px;
@@ -2160,7 +2160,7 @@ border-width: 0 0 1px 0;
     overflow:hidden;
     font-size:15px;
     font-weight:400;
-    line-height:1.5em;
+    line-height:1.5;
     margin:0
 }
  .custom-widget .post-title a{
@@ -2249,7 +2249,7 @@ box-sizing: border-box;
  .post-meta{
     overflow:hidden;
     color:#aaa;
-    font-size:13px;
+    font-size:0.85rem;
     font-weight:400;
     padding:0 1px
 }
@@ -2304,8 +2304,8 @@ font-size: 11px;
     position:relative;
     display:block;
     overflow:hidden;
-    font-size:13px;
-    line-height:1.5em;
+    font-size:1rem;
+    line-height:1.5;
     font-weight:400;
     margin:0 0 7px;
 }
@@ -2318,7 +2318,7 @@ font-size: 11px;
     position:relative;
     height:28px;
     color:$(title.color);
-    font-size:12px;
+    font-size:0.85rem;
     font-weight:500;
     text-transform:capitalize;
     line-height:28px;
@@ -2629,7 +2629,7 @@ a.read-more span {
  .post-nav p{
     font-size:22px;
     font-weight:400;
-    line-height:1.5em;
+    line-height:1.5;
     margin:0
 }
  .post-nav .post-nav-active p{
@@ -2739,7 +2739,7 @@ opacity: 1;
  .related-posts .post-title{
     font-size:15px;
     font-weight:400;
-    line-height:1.5em;
+    line-height:1.5;
     display:block;
     margin:0
 }
@@ -2904,7 +2904,7 @@ border:0;
     padding:0
 }
  .comments > h3{
-    font-size:13px;
+    font-size:1rem;
     font-weight:400;
     font-style:italic;
     padding-top:1px
@@ -2977,7 +2977,7 @@ border:0;
 }
  .comments .comments-content .comment-content{
     float:left;
-    font-size:13px;
+    font-size:1rem;
     color:#5E5E5E;
     font-weight:400;
     text-align:left;
@@ -3087,7 +3087,7 @@ border:0;
     font-size:16px
 }
  .post-body h6{
-    font-size:13px
+    font-size:1rem
 }
  blockquote{
     font-style:italic;
@@ -3126,7 +3126,7 @@ border:0;
  .post-body ul li:before{
     content:"\f105";
    font-family:'Font Awesome 5 Free';
-    font-size:13px;
+    font-size:1rem;
     font-weight:900;
     margin:0 5px 0 0
 }
@@ -3174,7 +3174,7 @@ border-bottom:2px solid $(main.dark.color);
     display:block;
     float: left;
     height:32px;
-    font-size:13px;
+    font-size:1rem;
     color:#fff;
     background:$(main.dark.color);
     font-weight:700;
@@ -3235,7 +3235,7 @@ border-bottom:2px solid $(main.dark.color);
  .list-label li a{
     display:block;
     color:$(title.color);
-    font-size:13px;
+    font-size:1rem;
     font-weight:400;
     text-transform:capitalize;
     transition:color .17s
@@ -3302,11 +3302,11 @@ border-bottom:2px solid $(main.dark.color);
     font-size:17px;
     color:$(widget.title);
     font-weight:500;
-    margin:0 0 13px
+    margin:0 0 1rem
 }
  .FollowByEmail .before-text{
-    font-size:13px;
-    line-height:1.5em;
+    font-size:1rem;
+    line-height:1.5;
     margin:0 0 15px;
     display:block;
     padding:0 10px;
@@ -3349,7 +3349,7 @@ border-bottom:2px solid $(main.dark.color);
 }
  #ArchiveList ul.flat li{
     color:$(title.color);
-    font-size:13px;
+    font-size:1rem;
     font-weight:400;
     padding:7px 0;
     border-bottom:1px dotted #eaeaea
@@ -3420,7 +3420,7 @@ border-bottom:2px solid $(main.dark.color);
  .PopularPosts .post-title{
     font-size:15px;
     font-weight:400;
-    line-height:1.5em;
+    line-height:1.5;
     margin:0
 }
  .PopularPosts .post-title a{
@@ -3461,7 +3461,7 @@ border-bottom:2px solid $(main.dark.color);
     text-decoration:underline
 }
  .Text{
-    font-size:13px
+    font-size:1rem
 }
  .contact-form-widget{
     float:left;
@@ -3483,7 +3483,7 @@ border-bottom:2px solid $(main.dark.color);
     width:100%;
     height:30px;
     font-family:inherit;
-    font-size:13px;
+    font-size:1rem;
     line-height:30px;
     box-sizing:border-box;
     padding:5px 10px;
@@ -3496,7 +3496,7 @@ border-bottom:2px solid $(main.dark.color);
     width:100%;
     height:30px;
     font-family:inherit;
-    font-size:13px;
+    font-size:1rem;
     line-height:30px;
     box-sizing:border-box;
     padding:5px 10px;
@@ -3508,7 +3508,7 @@ border-bottom:2px solid $(main.dark.color);
     float:left;
     width:100%;
     font-family:inherit;
-    font-size:13px;
+    font-size:1rem;
     box-sizing:border-box;
     padding:5px 10px;
     margin:0 0 10px;
@@ -3521,7 +3521,7 @@ border-bottom:2px solid $(main.dark.color);
     height:30px;
     background-color:$(main.color);
     font-family:inherit;
-    font-size:13px;
+    font-size:1rem;
     color:#fff;
     line-height:30px;
     cursor:pointer;
@@ -3572,7 +3572,7 @@ border-bottom:2px solid $(main.dark.color);
     background-color:#fff;
     font-weight:400;
     font-family:inherit;
-    font-size:13px;
+    font-size:1rem;
     line-height:30px;
     box-sizing:border-box;
     padding:5px 10px;
@@ -3585,7 +3585,7 @@ border-bottom:2px solid $(main.dark.color);
     width:25%;
     height:30px;
     font-family:inherit;
-    font-size:13px;
+    font-size:1rem;
     line-height:30px;
     cursor:pointer;
     box-sizing:border-box;
@@ -3645,7 +3645,7 @@ border-bottom:2px solid $(main.dark.color);
  .common-widget .LinkList ul li a,.common-widget .PageList ul li a{
     display:block;
     color:$(title.color);
-    font-size:13px;
+    font-size:1rem;
     font-weight:400;
     transition:color .17s ease
 }
@@ -3720,7 +3720,7 @@ border-bottom:2px solid $(main.dark.color);
     margin:0 20px 0 0
 }
 .feat-list .post-snippet {
-font-size: 13px;
+font-size: 1rem;
     line-height: 24px;
     color: #444444;
     text-align: justify;
@@ -3729,7 +3729,7 @@ font-size: 13px;
     display: flex;
     width: -moz-fit-content;
     width: fit-content;
-    font-size: 13px;
+    font-size: 0.85rem;
     font-weight: 500;
     padding: 0;
     margin: 0;
@@ -3804,7 +3804,7 @@ font-size: 13px;
 }
  .feat-big .post-title{
     overflow:hidden;
-    font-size:13px;
+    font-size:1rem;
     font-weight:700;
     line-height:1.3em;
     margin:0
@@ -3836,7 +3836,7 @@ font-size: 13px;
     display: flex;
     width: -moz-fit-content;
     width: fit-content;
-    font-size: 13px;
+    font-size: 0.85rem;
     font-weight: 500;
     padding: 0;
     margin: 0;
@@ -3887,7 +3887,7 @@ ul.grid-small {
     overflow:hidden;
     font-size:14px;
     font-weight:700;
-    line-height:1.5em;
+    line-height:1.5;
     margin:0
 }
  .grid-small .post-info{
@@ -3968,7 +3968,7 @@ ul.grid-big{
     overflow:hidden;
     font-size:18px;
     font-weight:700;
-    line-height:1.5em;
+    line-height:1.5;
     margin:0
 }
  .grid-big .post-info{
@@ -4132,7 +4132,7 @@ ul.grid-big{
 }
  #footer-wrapper .copyright-area{
     float:left;
-    font-size:13px;
+    font-size:1rem;
     display:block;
     height:34px;
   color:$(footer.color);
@@ -4189,7 +4189,7 @@ ul.grid-big{
     right:15px;
     cursor:pointer;
     overflow:hidden;
-    font-size:13px;
+    font-size:1rem;
     color:#fff;
     text-align:center;
     line-height:32px;
@@ -4416,7 +4416,7 @@ ul.grid-small, ul.grid-big {
    
      #breadcrumb{
         height:auto;
-        line-height:1.5em;
+        line-height:1.5;
         padding:10px 15px
     }
      #menu-footer,#footer-wrapper .copyright-area{
@@ -4564,6 +4564,9 @@ ul.grid-small, ul.grid-big {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 16px
+}
 /* CSS for iOS status bar */
 @media (display-mode: standalone),
        (fullscreen) {
@@ -4634,7 +4637,7 @@ a.next-button.icon svg {
   background-color: #1a1a1a;
   background-size: cover;
   background-position: 50%;
-  background-image: url('https://raw.githubusercontent.com/ncaanext/ncaanext-website/blob/main/assets/images/hero-image.jpg');
+  background-image: url('https://raw.githubusercontent.com/ncaanext/ncaanext-website/main/assets/images/hero-image.jpg');
 }
 
 .next-hero--content {
@@ -4970,7 +4973,7 @@ a.next-button.icon svg {
     border:0
 }
  table.tr-caption-container td.tr-caption{
-    font-size:13px;
+    font-size:1rem;
     color:#666666;
     padding:6px 0 0
 }
@@ -5068,7 +5071,7 @@ a.next-button.icon svg {
     display:block;
     background-color:rgba(155,155,155,0.05);
     font-family:Monospace;
-    font-size:13px;
+    font-size:1rem;
     color:#47474a;
     white-space:pre-wrap;
     line-height:1.4em;

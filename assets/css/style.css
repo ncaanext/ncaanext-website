@@ -1,6 +1,30 @@
+/*------ CUSTOM STYLING ---------- */
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 16px
+}
+/* CSS for iOS status bar */
+@media (display-mode: standalone),
+       (fullscreen) {
+  /* Change the background color of the status bar */
+  :root {
+    --status-bar-background-color: #000000; /* Replace with your desired color */
+  }
+
+  /* Apply the background color to the status bar */
+  /* Use !important to override default styles */
+  @supports (padding-top: constant(safe-area-inset-top)) or
+            (padding-top: env(safe-area-inset-top)) {
+    body {
+      padding-top: constant(safe-area-inset-top);
+      padding-top: env(safe-area-inset-top);
+      background-color: var(--status-bar-background-color) !important;
+    }
+  }
+}
+
 
 a.next-button {
     background-color: #CB2127;
@@ -33,7 +57,7 @@ a.next-button.icon svg {
 }
 #next-hero-wrapper-outer {
   background-color: #1a1a1a;
-  background-image: url('https://raw.githubusercontent.com/j26w/nccanext-website/main/assets/images/bg-turf.jpg');
+  background-image: url('https://raw.githubusercontent.com/ncaanext/ncaanext-website/main/assets/images/bg-turf.jpg');
 }
 
 .next-hero {
@@ -51,7 +75,7 @@ a.next-button.icon svg {
   background-color: #1a1a1a;
   background-size: cover;
   background-position: 50%;
-  background-image: url('https://github.com/j26w/nccanext-website/blob/main/assets/images/hero-image.jpg?raw=true');
+  background-image: url('https://raw.githubusercontent.com/ncaanext/ncaanext-website/main/assets/images/hero-image.jpg');
 }
 
 .next-hero--content {
@@ -157,3 +181,4 @@ a.next-button.icon svg {
     max-width: 500px
   }
 }
+/* ------- END CUSTOM STYLING ----------- */
