@@ -1,4 +1,7 @@
 /*------ CUSTOM STYLING ---------- */
+/* This is not referenced by the theme.
+   This is only for doing dev work in Codepen. 
+------------------------------------*/
 * {
   box-sizing: border-box;
 }
