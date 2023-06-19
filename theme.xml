@@ -156,7 +156,7 @@ a{
 }
 /* visited link */
 .post-body a:visited {
-  color: blue;
+  // color: blue;
 }
 
 /* selected link */
@@ -6179,13 +6179,13 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
 <b:include name='messagesJs'/>
             </b:includable>
             <b:includable id='aboutPostAuthor'>
-  <div class='author-name'>
+  <!-- <div class='author-name'>
     <a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'>
       <span>
         <data:post.author.name/>
       </span>
     </a>
-  </div>
+  </div> -->
   <div>
     <span class='author-desc'>
       <data:post.author.aboutMe/>
