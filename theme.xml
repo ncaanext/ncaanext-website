@@ -18,27 +18,27 @@ Author Url:  https://www.templatesyard.com/
 
 /*
 <!-- Variable definitions -->
-<Variable name="keycolor" description="Main Color" type="color" default="$(main.color)" value="#0AF8C5"/>
+<Variable name="keycolor" description="Main Color" type="color" default="$(main.color)" value="#000000"/>
 <Variable name="followByEmail" description="Follow By Email Text" type="string" default="Get all latest content delivered straight to your inbox." value="Get all latest content delivered straight to your inbox."/>
 
 <Group description="Theme Colors" selector="body">
- <Variable name="main.color" description="Theme Color" type="color" default="#0AF8C5" value="#0AF8C5"/>
-  <Variable name="main.dark.color" description="Dark Color" type="color" default="#131315" value="#131315"/>
+ <Variable name="main.color" description="Theme Color" type="color" default="#d52c1f" value="#d52c1f"/>
+  <Variable name="main.dark.color" description="Dark Color" type="color" default="#131315" value="#000000"/>
   <Variable name="header.bg" description="Header Background" type="color" default="#000000" value="#000000"/>
-  <Variable name="menu.color" description="Menu Color" type="color" default="#acacac" value="#acacac"/>
-  <Variable name="submenu.bg" description="SubMenu Background" type="color" default="#f7f8fa" value="#f7f8fa"/>
-  <Variable name="submenu.color" description="SubMenu Color" type="color" default="#131315" value="#131315"/>
-  <Variable name="title.color" description="Title Color" type="color" default="#131315" value="#131315"/>
-  <Variable name="widget.title" description="Widget Title Color" type="color" default="#131315" value="#131315"/>
+  <Variable name="menu.color" description="Menu Color" type="color" default="#acacac" value="#a0a0a0"/>
+  <Variable name="submenu.bg" description="SubMenu Background" type="color" default="#f7f8fa" value="#f0f2f6"/>
+  <Variable name="submenu.color" description="SubMenu Color" type="color" default="#131315" value="#000000"/>
+  <Variable name="title.color" description="Title Color" type="color" default="#131315" value="#000000"/>
+  <Variable name="widget.title" description="Widget Title Color" type="color" default="#131315" value="#000000"/>
   <Variable name="footer.bg" description="Footer Backgroundr" type="color" default="#000000" value="#000000"/>
   <Variable name="footer.color" description="Footer Color" type="color" default="#ffffff" value="#ffffff"/>
 </Group>
 
 <Group description="Theme Body" selector="body">
-  <Variable name="body.background.color" description="Body Background Color" type="color" default="#f2f6f8"  value="#f2f6f8"/>
+  <Variable name="body.background.color" description="Body Background Color" type="color" default="#f2f6f8"  value="#ebf2f4"/>
   <Variable name="body.background" description="Background" type="background" color="$(body.background.color)" default="$(color) url() repeat fixed top left" value="$(color) url() repeat fixed top left"/>
-  <Variable name="body.text.color" description="Text Color" type="color" default="#656565"  value="#656565"/>
-  <Variable name="body.link.color" description="Link Color" type="color" default="$(main.color)"  value="#0AF8C5"/>
+  <Variable name="body.text.color" description="Text Color" type="color" default="#656565"  value="#1e1e1e"/>
+  <Variable name="body.link.color" description="Link Color" type="color" default="$(main.color)"  value="#d52c1f"/>
 </Group>
  
 <!-- Extra Variables -->
@@ -47,7 +47,7 @@ Author Url:  https://www.templatesyard.com/
 <Variable name="posts.background.color" description="Post background color" hideEditor="true" type="color" default="#ffffff"  value="#ffffff"/>
 <Variable name="tabs.font" description="Font 2" hideEditor="true" type="font" default="13px Fira Sans, sans-serif"  value="13px Fira Sans, sans-serif"/>
 <Variable name="posts.title.color" description="Post title color" hideEditor="true" type="color" default="#000000"  value="#000000"/>
-<Variable name="posts.text.color" description="Post text color" hideEditor="true" type="color" default="#656565"  value="#656565"/>
+<Variable name="posts.text.color" description="Post text color" hideEditor="true" type="color" default="#656565"  value="#1e1e1e"/>
 <Variable name="posts.icons.color" description="Post icons color" hideEditor="true" type="color" default="$(main.color)"  value="#3c5a98"/>
 <Variable name="labels.background.color" description="Label background color" hideEditor="true" type="color" default="$(main.color)"  value="#3c5a98"/>
 */
@@ -194,7 +194,7 @@ abbr{
     background:$(body.background);
     background-color:$(body.background.color);
     font-family:'Fira Sans',Arial,sans-serif;
-    font-size:14px;
+    font-size:16px;
     font-weight:400;
     color:$(body.text.color);
     word-wrap:break-word;
@@ -282,7 +282,7 @@ opacity: 1;
     overflow:hidden;
     margin:0;
     background:#ffffff;
-    border-bottom: 1px solid #A6A6A6;
+    // border-bottom: 1px solid #A6A6A6;
 }
  #top-bar .container{
     margin:0 auto;   
@@ -621,6 +621,8 @@ font-family: 'Font Awesome 5 Free';
    box-shadow: 0 4px 30px #00000012;
     z-index:1010;
 }
+
+
  #header-wrap .container{
     position:relative;
     margin:0 auto;
@@ -629,7 +631,7 @@ font-family: 'Font Awesome 5 Free';
 }
  .header-logo{
     float:left;
-    margin:0 20px 0 0;
+    margin:0 0 0 0;
     display: flex;
     align-items: center;
     flex-shrink: 0;
@@ -644,7 +646,7 @@ font-family: 'Font Awesome 5 Free';
     display: flex;
     align-items: center;
     flex: 1;
-    padding: 0 0 0 20px;
+    padding: 0 0;
 }
  .main-logo .header-image-wrapper{
     display:block
@@ -689,7 +691,7 @@ display:none;
  #main-menu ul > li > a{
     position:relative;
     color:$(menu.color);
-    font-size:14px;
+    font-size:16px;
     font-weight:500;
     line-height:70px;
     display:inline-block;
@@ -862,6 +864,8 @@ display:none;
     cursor:pointer;
     transition:color .17s ease
 }
+
+
  .show-search:hover,.hide-search:hover{
     color:$(menu.color)
 }
@@ -887,6 +891,7 @@ display:none;
     box-sizing:border-box;
     padding:0
 }
+
  #nav-search .search-form{
     width:100%;
     height:70px;
@@ -895,6 +900,7 @@ display:none;
     overflow:hidden;
     padding:0
 }
+
  #nav-search .search-input{
     width:100%;
     height:70px;
@@ -903,11 +909,12 @@ display:none;
     margin:0;
     padding:0 58px 0 10px;
     background-color:rgba(0,0,0,0);
-    font-size:13px;
+    font-size:17px;
     font-weight:400;
     box-sizing:border-box;
     border:0
 }
+
  #nav-search .search-input:focus{
     color:$(menu.color);
     outline:none
@@ -926,6 +933,10 @@ display:none;
     cursor: pointer;
     transition: color .17s ease;
     color:$(menu.color);
+}
+
+@media (min-width: 980px) {
+.mobile-menu-toggle {display: none;}
 }
  .mobile-menu-toggle:hover{
     color:$(menu.color)
@@ -1947,9 +1958,17 @@ display: flex;
     margin-right: 2px;
     font-weight: 500;
     color: $(main.color);
+	display: none;
 }
 .post-tag a {
     color: $(main.dark.color);
+	display: inline-block;
+	padding: 3px 6px;
+	border: 1px solid $(main.color);
+}
+.post-tag a:hover {
+	color: #fff;
+	background-color: $(main.color);
 }
  .hot-posts .post-title, .PopularPosts .hot-posts .post-title{
     font-size:16px;
@@ -2330,7 +2349,7 @@ a.read-more span {
     inset: 0;
     width: 100%;
     border-radius: 4px;
-    transform: scaleX(0);
+    // transform: scaleX(0);
     transform-origin: 100% 50%;
     transition-property: transform;
     transition-duration: 0.5s;
@@ -2608,7 +2627,7 @@ a.read-more span {
     margin:0 0 0 2px
 }
  .post-nav p{
-    font-size:12px;
+    font-size:22px;
     font-weight:400;
     line-height:1.5em;
     margin:0
@@ -3639,7 +3658,7 @@ border-bottom:2px solid $(main.dark.color);
 .black-feat {
     background:$(main.dark.color);
     padding-top:30px;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
 }
 .black-feat .featured-posts .widget-title {
     display: none;
@@ -4540,6 +4559,192 @@ ul.grid-small, ul.grid-big {
     }
 }
 
+
+/*------ CUSTOM STYLING ---------- */
+* {
+  box-sizing: border-box;
+}
+/* CSS for iOS status bar */
+@media (display-mode: standalone),
+       (fullscreen) {
+  /* Change the background color of the status bar */
+  :root {
+    --status-bar-background-color: #000000; /* Replace with your desired color */
+  }
+
+  /* Apply the background color to the status bar */
+  /* Use !important to override default styles */
+  @supports (padding-top: constant(safe-area-inset-top)) or
+            (padding-top: env(safe-area-inset-top)) {
+    body {
+      padding-top: constant(safe-area-inset-top);
+      padding-top: env(safe-area-inset-top);
+      background-color: var(--status-bar-background-color) !important;
+    }
+  }
+}
+
+
+a.next-button {
+    background-color: #CB2127;
+    border: 2px solid #fff;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+    box-sizing: border-box;
+    opacity: 1;
+    padding: 0.7em 1.5em;
+    border-radius: 5px;
+    transition: all .17s ease;
+}
+a.next-button:hover {
+  opacity: 0.8;
+}
+a.next-button.outline {
+  background: transparent;
+  border: 2px solid #fff;
+}
+a.next-button.icon {
+  
+}
+a.next-button.icon svg {
+  height: 19px;
+  width: auto;
+}
+#next-hero-wrapper-outer {
+  background-color: #1a1a1a;
+  background-image: url('https://raw.githubusercontent.com/j26w/nccanext-website/main/assets/images/bg-turf.jpg');
+}
+
+.next-hero {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.next-hero--image {
+  width: 100%;
+  height: 300px;
+  flex: none;
+  position: relative;
+  background-color: #1a1a1a;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url('https://github.com/j26w/nccanext-website/blob/main/assets/images/hero-image.jpg?raw=true');
+}
+
+.next-hero--content {
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+}
+.next-hero--content p {
+  line-height: 1.5;
+}
+.next-hero--content img {
+  height: auto;
+  max-width: 100%;
+}
+.next-hero--content .lead {
+  font-size: 2em;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+.cta-buttons-wrap {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.next-hero-boxes {
+  margin: 40px auto 0;
+  padding-bottom: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.next-hero-boxes > div { 
+  width: 100%;
+  padding: 20px;
+}
+.next-card {
+  width: 100%;
+}
+.next-card .image {
+  position:relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.next-card .image img {
+  max-width: 100%;
+  position: absolute;
+  inset: 0;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+.next-card .content {
+  color: #fff;
+}
+.next-card .content h3 {
+  font-size: 26px;
+  margin: 15px 0;
+}
+.next-card .content p {
+  line-height: 1.5;
+}
+@media (min-width: 1101px) {
+  .next-hero,
+  .next-hero-boxes {
+    width: 1250px;
+  }
+}
+@media (min-width: 980px) {
+  .next-hero {
+    flex-direction: row;
+    
+  }
+  .next-hero-boxes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+  }
+  .next-hero-boxes > div {
+    width: calc(33.3% - 20px);
+    padding: 0;
+  }
+  .next-hero--image {
+    width: 50%;
+    height: auto;
+    order: 2;
+  }
+  .next-hero--content {
+    padding: 50px;
+  }
+  .next-hero--content p {
+    max-width: 500px
+  }
+}
+/* ------- END CUSTOM STYLING ----------- */
+
+
+
+
 ]]></b:skin>
 <style>
   .firstcharacter{
@@ -4940,6 +5145,10 @@ body#layout .footer-about-area, body#layout .foot-bar-social {
     display: block;
 }
 /*------Layout (end)----------*/
+
+
+
+
 ]]></b:template-skin>
 </b:if>
 
@@ -4982,7 +5191,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
       </div>
     </b:includable>
  <b:includable id='theme-head'>
-    <meta content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1' name='viewport'/>
+   <meta content='width=device-width, initial-scale=1, viewport-fit=cover' name='viewport'/>
     <title><data:view.title.escaped/></title>
 <link href='//1.bp.blogspot.com' rel='dns-prefetch'/>
     <link href='//2.bp.blogspot.com' rel='dns-prefetch'/>
@@ -5287,7 +5496,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
         <form class='search-form' expr:action='data:blog.searchUrl'>
           <b:attr cond='not data:view.isPreview' name='target' value='_top'/>
           <b:include name='urlParamsAsFormInput'/>
-          <input autocomplete='off' class='search-input' expr:aria-label='data:messages.searchThisBlog' expr:placeholder='data:messages.searchThisBlog' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' name='q'/>
+          <input autocomplete='off' class='search-input' expr:aria-label='data:messages.searchThisBlog' expr:placeholder='Search this site...' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' name='q'/>
           <input class='search-action' expr:value='data:messages.search.escaped' type='submit'/>  
         </form>
       </div>
@@ -5323,6 +5532,10 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
 
     <!-- Google Analytics -->
     <b:include data='blog' name='google-analytics'/>
+
+    <!-- Custom CSS Styling -->
+    <link href='https://raw.githubusercontent.com/j26w/nccanext-website/main/assets/css/style.css' rel='stylesheet'/>
+
 
 </head>
 <body expr:class='data:blog.pageType'>
@@ -5423,7 +5636,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
       <div class='mobile-menu'/>
     </div>
          <b:section class='flex-menu-widget common-widget' id='flex-widget' name='Hidden Post List' showaddelement='yes'>
-           <b:widget id='HTML39' locked='false' title='Editors Choice' type='HTML' visible='true'>
+           <b:widget id='HTML39' locked='false' title='Editors Choice' type='HTML' visible='false'>
              <b:widget-settings>
                <b:widget-setting name='content'>3/recent/post-list</b:widget-setting>
              </b:widget-settings>
@@ -5439,7 +5652,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
       <div class='mm-social social'>
         <!-- Top Social --> 
         <b:section class='side-bar-social social' id='side-bar-social' maxwidgets='1' name='Social Side' showaddelement='yes'>
-           <b:widget id='LinkList79' locked='true' title='Link List' type='LinkList' version='2' visible='true'>
+           <b:widget id='LinkList79' locked='true' title='Link List' type='LinkList' version='2' visible='false'>
              <b:widget-settings>
                <b:widget-setting name='link-3'>#</b:widget-setting>
                <b:widget-setting name='sorting'>NONE</b:widget-setting>
@@ -5470,15 +5683,21 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
       </div>
       <div class='mm-menu'>
          <b:section class='side-bar-nav' id='side-bar-nav' maxwidgets='1' name='Side Navigation' showaddelement='yes'>
-           <b:widget id='LinkList78' locked='true' title='Link List' type='LinkList' version='2' visible='true'>
+           <b:widget id='LinkList78' locked='true' title='Link List' type='LinkList' version='2' visible='false'>
              <b:widget-settings>
-               <b:widget-setting name='sorting'>NONE</b:widget-setting>
+               <b:widget-setting name='link-5'>#</b:widget-setting>
+               <b:widget-setting name='link-3'>https://www.instagram.com/livebloggerofficial/</b:widget-setting>
+               <b:widget-setting name='link-4'>https://www.youtube.com/liveblogger</b:widget-setting>
                <b:widget-setting name='text-1'>About</b:widget-setting>
-               <b:widget-setting name='link-1'>https://vibeblog-templatesyard.blogspot.com/p/about-us.html</b:widget-setting>
                <b:widget-setting name='text-0'>Home</b:widget-setting>
+               <b:widget-setting name='text-3'>instagram</b:widget-setting>
+               <b:widget-setting name='text-2'>Contact</b:widget-setting>
+               <b:widget-setting name='text-5'>linkedin</b:widget-setting>
+               <b:widget-setting name='text-4'>youtube</b:widget-setting>
+               <b:widget-setting name='sorting'>NONE</b:widget-setting>
+               <b:widget-setting name='link-1'>https://vibeblog-templatesyard.blogspot.com/p/about-us.html</b:widget-setting>
                <b:widget-setting name='link-2'>https://vibeblog-templatesyard.blogspot.com/p/contact-us_27.html</b:widget-setting>
                <b:widget-setting name='link-0'>/</b:widget-setting>
-               <b:widget-setting name='text-2'>Contact</b:widget-setting>
              </b:widget-settings>
              <b:includable id='main'>
               <b:include name='content'/>
@@ -5508,15 +5727,15 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
         
       <span class='mobile-menu-toggle'/> 
         <b:section class='main-logo' id='main-logo' maxwidgets='1' name='Header Logo' showaddelement='yes'>
-           <b:widget id='Header1' locked='true' title='VibeBlog (Header)' type='Header' version='2' visible='true'>
+           <b:widget id='Header1' locked='true' title='NCAA NEXT (Header)' type='Header' version='2' visible='true'>
              <b:widget-settings>
-               <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEirWsZd0_1OZYdjWKlOz68AsUqJz2TMlI2J7JYp3oj5HD9T275k0VbwsZInqk9m0x11LuhXiGyqYof5ToVhD99x5FSuHsl8id8lnFhjj3gFkB-3uhjJrRhWHAQMI0fZ6XQkpdOd_9VXERtaq6eZyendeZ8MDdszenG36optbQHTPwEYdZB4Ibotaw0V=s147</b:widget-setting>
-               <b:widget-setting name='displayHeight'>38</b:widget-setting>
-               <b:widget-setting name='sectionWidth'>150</b:widget-setting>
+               <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEjFhpWodroaGvE2L1MUP47UsWEPwHwX4DmXcKRHgZlRuH7OAhilZFnbV0YbRu6mQTqGi9r6SH4Tjy5gVrQP3leRsq6ab6dm2T7Ym3zjJvfGIRw8i8eM--8XgaArC0o-S58B4-UC6DC3-aycNPdaRG_CTFmeSIwj6HLCetbUWZYY-gXlls28xh7o2Dho=s600</b:widget-setting>
+               <b:widget-setting name='displayHeight'>140</b:widget-setting>
+               <b:widget-setting name='sectionWidth'>119</b:widget-setting>
                <b:widget-setting name='useImage'>true</b:widget-setting>
                <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
                <b:widget-setting name='imagePlacement'>REPLACE</b:widget-setting>
-               <b:widget-setting name='displayWidth'>147</b:widget-setting>
+               <b:widget-setting name='displayWidth'>600</b:widget-setting>
              </b:widget-settings>
              <b:includable id='main' var='this'>
       <div class='header-widget'>
@@ -5559,35 +5778,69 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
         <b:section class='main-menu' id='main-menu' maxwidgets='1' name='Main Menu' showaddelement='yes'>
           <b:widget id='LinkList74' locked='true' title='Link List' type='LinkList' version='2' visible='true'>
             <b:widget-settings>
-              <b:widget-setting name='text-10'>Documentation</b:widget-setting>
+              <b:widget-setting name='text-30'>_Discord</b:widget-setting>
+              <b:widget-setting name='text-26'>_FAQ</b:widget-setting>
+              <b:widget-setting name='text-27'>_Known Bugs</b:widget-setting>
+              <b:widget-setting name='text-28'>_Save Compatibility</b:widget-setting>
+              <b:widget-setting name='text-29'>_V13 - Important Notes</b:widget-setting>
+              <b:widget-setting name='text-22'>_Schedule Generator</b:widget-setting>
+              <b:widget-setting name='text-23'>_Texture Templates</b:widget-setting>
+              <b:widget-setting name='link-30'>https://discord.ncaanext.com</b:widget-setting>
+              <b:widget-setting name='text-24'>_Misc Modding Links</b:widget-setting>
+              <b:widget-setting name='text-25'>Help</b:widget-setting>
+              <b:widget-setting name='text-9'>Installation</b:widget-setting>
+              <b:widget-setting name='text-8'>_Beta Testing</b:widget-setting>
+              <b:widget-setting name='text-20'>_Music Soundtrack</b:widget-setting>
+              <b:widget-setting name='text-21'>_Playbook Editor</b:widget-setting>
+              <b:widget-setting name='text-1'>_The Mod</b:widget-setting>
+              <b:widget-setting name='text-0'>About</b:widget-setting>
+              <b:widget-setting name='text-3'>_Github</b:widget-setting>
+              <b:widget-setting name='text-2'>_Media</b:widget-setting>
+              <b:widget-setting name='text-5'>Downloads</b:widget-setting>
+              <b:widget-setting name='text-4'>_Discord Community</b:widget-setting>
+              <b:widget-setting name='text-7'><![CDATA[_DLC & Add-Ons]]></b:widget-setting>
+              <b:widget-setting name='text-6'>_Base Mods</b:widget-setting>
+              <b:widget-setting name='text-19'>_Fantasy Roster</b:widget-setting>
+              <b:widget-setting name='text-15'>_Community Sliders</b:widget-setting>
+              <b:widget-setting name='text-16'>_Playbook Guides</b:widget-setting>
+              <b:widget-setting name='text-17'>Modding</b:widget-setting>
+              <b:widget-setting name='text-18'>_Database Editing</b:widget-setting>
+              <b:widget-setting name='text-11'>_Game ISO Creation</b:widget-setting>
+              <b:widget-setting name='text-12'>_YouTube Tutorial</b:widget-setting>
+              <b:widget-setting name='text-13'>Guides</b:widget-setting>
+              <b:widget-setting name='text-14'>_Dynasty Guide</b:widget-setting>
+              <b:widget-setting name='text-10'>_Emulator Set-Up</b:widget-setting>
+              <b:widget-setting name='link-17'>#</b:widget-setting>
+              <b:widget-setting name='link-16'>https://www.playbookgamer.com</b:widget-setting>
+              <b:widget-setting name='link-19'>https://www.ncaanext.com/p/fantasy-roster-generator.html</b:widget-setting>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
-              <b:widget-setting name='link-1'>#</b:widget-setting>
-              <b:widget-setting name='link-13'>https://www.templatesyard.com/2023/01/vibeblog-blogger-template.html</b:widget-setting>
-              <b:widget-setting name='link-2'>#</b:widget-setting>
-              <b:widget-setting name='link-12'>https://youtu.be/19X-kiJLvXE</b:widget-setting>
-              <b:widget-setting name='link-0'>/</b:widget-setting>
-              <b:widget-setting name='link-11'>https://www.sorabloggingtips.com/2023/01/how-to-setup-vibeblog-blogger-template.html</b:widget-setting>
-              <b:widget-setting name='link-10'>#</b:widget-setting>
-              <b:widget-setting name='text-9'>Mega Menu</b:widget-setting>
-              <b:widget-setting name='link-9'>random/mega-menu</b:widget-setting>
-              <b:widget-setting name='text-8'>_Error Page</b:widget-setting>
-              <b:widget-setting name='link-7'>https://www.sorabloggingtips.com/2017/01/how-to-add-sitemap-widget-in-blogspot-blogs.html</b:widget-setting>
-              <b:widget-setting name='link-8'>https://vibeblog-templatesyard.blogspot.com/templatesyard</b:widget-setting>
-              <b:widget-setting name='link-5'>#</b:widget-setting>
-              <b:widget-setting name='link-6'>https://vibeblog-templatesyard.blogspot.com/p/post-format-and-page-markup.html</b:widget-setting>
-              <b:widget-setting name='link-3'>#</b:widget-setting>
-              <b:widget-setting name='link-4'>#</b:widget-setting>
-              <b:widget-setting name='text-1'>Features</b:widget-setting>
-              <b:widget-setting name='text-0'>Home</b:widget-setting>
-              <b:widget-setting name='text-3'>__DropDown 1</b:widget-setting>
-              <b:widget-setting name='text-2'>_Multi DropDown</b:widget-setting>
-              <b:widget-setting name='text-5'>__DropDown 3</b:widget-setting>
-              <b:widget-setting name='text-4'>__DropDown 2</b:widget-setting>
-              <b:widget-setting name='text-7'>_SiteMap</b:widget-setting>
-              <b:widget-setting name='text-6'>_ShortCodes</b:widget-setting>
-              <b:widget-setting name='text-11'>_Web Doc</b:widget-setting>
-              <b:widget-setting name='text-12'>_Video Doc</b:widget-setting>
-              <b:widget-setting name='text-13'>Download This Template</b:widget-setting>
+              <b:widget-setting name='link-18'>https://www.ncaanext.com/p/database-editing.html</b:widget-setting>
+              <b:widget-setting name='link-1'>https://www.ncaanext.com/p/about.html</b:widget-setting>
+              <b:widget-setting name='link-13'>#</b:widget-setting>
+              <b:widget-setting name='link-2'>https://www.ncaanext.com/p/media.html</b:widget-setting>
+              <b:widget-setting name='link-12'>https://www.youtube.com/watch?v=MV2BrrWpraU</b:widget-setting>
+              <b:widget-setting name='link-15'>https://www.ncaanext.com/p/sliders.html</b:widget-setting>
+              <b:widget-setting name='link-0'>#</b:widget-setting>
+              <b:widget-setting name='link-14'>https://www.ncaanext.com/p/ncaa-next-dynasty-game-guide.html</b:widget-setting>
+              <b:widget-setting name='link-11'>https://www.ncaanext.com/p/ncaa-next-iso-mod-creation.html</b:widget-setting>
+              <b:widget-setting name='link-10'>https://www.ncaanext.com/p/set-up-guide.html</b:widget-setting>
+              <b:widget-setting name='link-9'>https://www.ncaanext.com/p/set-up-guide.html</b:widget-setting>
+              <b:widget-setting name='link-7'>https://www.ncaamod.com/textures/</b:widget-setting>
+              <b:widget-setting name='link-8'>https://www.ncaanext.com/p/ncaa-next-betas.html</b:widget-setting>
+              <b:widget-setting name='link-5'>https://www.ncaanext.com/p/download_23.html</b:widget-setting>
+              <b:widget-setting name='link-6'>https://www.ncaanext.com/p/download_23.html</b:widget-setting>
+              <b:widget-setting name='link-3'>https://github.com/h4wduk3n/NCAA06Next</b:widget-setting>
+              <b:widget-setting name='link-4'>https://discord.ncaanext.com</b:widget-setting>
+              <b:widget-setting name='link-28'>https://www.ncaanext.com/p/dynasty-save-compatibility-upgrading.html</b:widget-setting>
+              <b:widget-setting name='link-27'>https://www.ncaanext.com/p/known-bugs.html</b:widget-setting>
+              <b:widget-setting name='link-29'>https://www.ncaanext.com/p/v13-special-instructions.html</b:widget-setting>
+              <b:widget-setting name='link-24'>https://www.ncaanext.com/p/dynasty-modding.html</b:widget-setting>
+              <b:widget-setting name='link-23'>https://www.ncaamod.com/templates/</b:widget-setting>
+              <b:widget-setting name='link-26'>https://www.ncaanext.com/p/faq.html</b:widget-setting>
+              <b:widget-setting name='link-25'>#</b:widget-setting>
+              <b:widget-setting name='link-20'>https://www.ncaanext.com/p/music-soundtracks-for-ncaa-madden-ps2.html</b:widget-setting>
+              <b:widget-setting name='link-22'>https://www.ncaanext.com/p/schedule-generator-tool.html</b:widget-setting>
+              <b:widget-setting name='link-21'>https://www.ncaanext.com/p/playbook-editor.html</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
               <b:include name='content'/>
@@ -5604,7 +5857,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
       </div>
       <div id='nav-search'>
         <form class='search-form' expr:action='data:blog.searchUrl' role='search'>
-          <input autocomplete='off' class='search-input' expr:placeholder='data:messages.searchThisBlog' name='q' type='search' value=''/>
+          <input autocomplete='off' class='search-input' name='q' placeholder='Search this site...' type='search' value=''/>
           <span class='hide-search'/>
         </form>
       </div>
@@ -5616,15 +5869,11 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
  <div id='top-bar'>
     <div class='container row'>
         <b:section class='top-bar-nav' id='top-bar-nav' maxwidgets='1' name='Top Navigation' showaddelement='yes'>
-          <b:widget id='LinkList72' locked='true' title='Link List' type='LinkList' version='2' visible='true'>
+          <b:widget id='LinkList72' locked='true' title='Link List' type='LinkList' version='2' visible='false'>
             <b:widget-settings>
               <b:widget-setting name='sorting'>NONE</b:widget-setting>
-              <b:widget-setting name='text-1'>About</b:widget-setting>
-              <b:widget-setting name='link-1'>https://vibeblog-templatesyard.blogspot.com/p/about-us.html</b:widget-setting>
               <b:widget-setting name='text-0'>Home</b:widget-setting>
-              <b:widget-setting name='link-2'>https://vibeblog-templatesyard.blogspot.com/p/contact-us_27.html</b:widget-setting>
               <b:widget-setting name='link-0'>/</b:widget-setting>
-              <b:widget-setting name='text-2'>Contact</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
               <b:include name='content'/>
@@ -5643,17 +5892,17 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
 
       <!-- Top Social --> 
         <b:section class='top-bar-social social' id='top-bar-social' maxwidgets='1' name='Social Top' showaddelement='yes'>
-           <b:widget id='LinkList73' locked='true' title='Link List' type='LinkList' version='2' visible='true'>
+           <b:widget id='LinkList73' locked='true' title='Link List' type='LinkList' version='2' visible='false'>
              <b:widget-settings>
                <b:widget-setting name='link-3'>#</b:widget-setting>
                <b:widget-setting name='sorting'>NONE</b:widget-setting>
                <b:widget-setting name='link-4'>#</b:widget-setting>
-               <b:widget-setting name='text-1'>twitter</b:widget-setting>
-               <b:widget-setting name='link-1'>https://twitter.com/LiveBlogger1</b:widget-setting>
-               <b:widget-setting name='text-0'>facebook</b:widget-setting>
+               <b:widget-setting name='text-1'>github</b:widget-setting>
+               <b:widget-setting name='link-1'>https://github.com/h4wduk3n/NCAA06Next</b:widget-setting>
+               <b:widget-setting name='text-0'>twitter</b:widget-setting>
                <b:widget-setting name='link-2'>https://www.instagram.com/livebloggerofficial/</b:widget-setting>
                <b:widget-setting name='text-3'>pinterest</b:widget-setting>
-               <b:widget-setting name='link-0'>https://www.facebook.com/templatesyard/</b:widget-setting>
+               <b:widget-setting name='link-0'>https://twitter.com/NCAA06NEXT/</b:widget-setting>
                <b:widget-setting name='text-2'>instagram</b:widget-setting>
                <b:widget-setting name='text-4'>skype</b:widget-setting>
              </b:widget-settings>
@@ -5676,42 +5925,108 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
     </div>
   </div>
   <!-- Breaking Wrapper --> 
- 
-   <div class='row ad-wrapper'>
- <b:section class='home-ad-top' id='home-ad-top1' maxwidgets='1' name='Home Ads Top' showaddelement='yes'>
-   <b:widget id='HTML21' locked='false' title='Ad Code' type='HTML' visible='true'>
-     <b:widget-settings>
-       <b:widget-setting name='content'>&lt;a class=&quot;sora-ads-full&quot; href=&quot;javascript:;&quot;&gt;Responsive Advertisement&lt;/a&gt;
-&lt;style&gt;
-.sora-ads-full {
-  display: block;
-    background-color: #eee;
-    text-align: center;
-    font-size: 13px;
-    color: #aaaaaa;
-    font-weight: 400;
-    font-style: italic;
-    line-height: 90px;
-    border: 1px solid #ccc;
-}
-&lt;/style&gt;</b:widget-setting>
-     </b:widget-settings>
-     <b:includable id='main'>
-  <b:include name='widget-title'/>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-   </b:widget>
- </b:section>
+  
+  
+  
+  
+  
+  
+  
+  <b:if cond='data:blog.canonicalUrl == data:blog.homepageUrl'>
+  
+  
+  <main id='next-hero-wrapper-outer'>
+  <div class='next-hero'>
+    
+    
+    <div class='next-hero--image'>
+      
     </div>
+    
+    <div class='next-hero--content'>
+
+      <img src='https://raw.githubusercontent.com/j26w/nccanext-website/main/assets/images/logo-ncaa-next-annual-23.png' width='500'/>
+     <p class='lead'>The Next Evolution of NCAA &#39;06</p> 
+      
+      <p class='body'>
+      NCAA NEXT is a free and open-source community mod for EA&#39;s NCAA &#39;06 Football PS2 game. Available to play on PC, Mac, or Android with the PCSX2 or AetherSX2 emulators. Experience the game as never before with 4K textures, modern rosters and conference alignments, playoffs, and much more.</p>
+      
+      <div class='cta-buttons-wrap'>
+      
+        <a class='next-button icon' href='https://github.com/h4wduk3n/NCAA06Next/releases'>
+                		<svg height='24' role='img' style='fill: #fff;margin-right:5px;margin-bottom:-2px;' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><title>GitHub</title><path d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/></svg>
+
+          Download</a>
+        
+        <a class='next-button outline' href='https://www.ncaanext.com/p/set-up-guide.html'>Installation Guide</a>
+        
+      </div>
+    
+      
+    </div>
+    
+  </div>
+
+  <div class='next-hero-boxes'>
+    
+    <div>
+      <div class='next-card'>
+       <div class='image'>
+         <img src='https://raw.githubusercontent.com/j26w/nccanext-website/main/assets/images/hero-box-1.jpg'/>
+        </div>
+        <div class='content'>
+          <h3>Ultra Hi-Res 4K Textures</h3>
+          <p>With modern emulation and powerful CPUs we are able to upscale graphics to 4K. The NEXT team and community has created thousands of hi-res replacement textures, upscaling old graphics and creating entirely new  content such as authentic up-to-date team uniforms.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div>
+      <div class='next-card'>
+       <div class='image'>
+         <img src='https://raw.githubusercontent.com/j26w/nccanext-website/main/assets/images/hero-box-2-v03.jpg'/>
+        </div>
+        <div class='content'>
+          <h3>Modern College Football Format</h3>
+          <p>Play with today&#39;s rosters, modern conference alignments, game rules, and even the college football playoff. Through reverse-engineering and editing of the game&#39;s code, this becomes possible and is available to use now in the latest version of NCAA NEXT. 
+            
+</p>
+        </div>
+      </div>
+    </div>
+    
+   <div>
+      <div class='next-card'>
+       <div class='image'>
+         <img src='https://raw.githubusercontent.com/j26w/nccanext-website/main/assets/images/hero-box-3-v02.jpg'/>
+        </div>
+        <div class='content'>
+          <h3>Classic &#39;06 Gameplay</h3>
+          <p>The PS2 era of NCAA and Madden games are considered by many to have the best gameplay in their respective series. That same core gameplay experience, from the physics to the AI to the sim/arcade balance, everything that makes &#39;06 one of the greatest NCAA football games ever made, is still here.</p>
+        </div>
+      </div>
+    </div>
+   </div>
+</main>
+  
+  
+  
+  </b:if>
+  
+  
+  
+  
+  
+  
+  
+
   <div class='clearfix'/>
  
    <b:if cond='data:view.isHomepage'> 
     <!-- Featured Wrapper -->
     <div class='row' id='hot-wrapper'>
       <b:section id='hot-section' maxwidgets='1' name='Hot Posts' showaddelement='yes'>
-        <b:widget id='HTML7' locked='false' title='Food' type='HTML' visible='true'>
+        <b:widget id='HTML7' locked='false' title='Food' type='HTML' visible='false'>
           <b:widget-settings>
             <b:widget-setting name='content'>recent/hot-posts</b:widget-setting>
           </b:widget-settings>
@@ -5724,40 +6039,12 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
         </b:widget>
       </b:section>
     </div>
-    <div class='clearfix'/>
-      <div class='row ad-wrapper'>
- <b:section class='home-ad-top' id='home-ad-top2' maxwidgets='1' name='Home Ads Top' showaddelement='yes'>
-   <b:widget id='HTML29' locked='false' title='Ad Code' type='HTML' visible='true'>
-     <b:widget-settings>
-       <b:widget-setting name='content'>&lt;a class=&quot;sora-ads-full&quot; href=&quot;javascript:;&quot;&gt;Responsive Advertisement&lt;/a&gt;
-&lt;style&gt;
-.sora-ads-full {
-  display: block;
-    background-color: #eee;
-    text-align: center;
-    font-size: 13px;
-    color: #aaaaaa;
-    font-weight: 400;
-    font-style: italic;
-    line-height: 90px;
-    border: 1px solid #ccc;
-}
-&lt;/style&gt;</b:widget-setting>
-     </b:widget-settings>
-     <b:includable id='main'>
-  <b:include name='widget-title'/>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-   </b:widget>
- </b:section>
-    </div>
+  
   <div class='clearfix'/>
      <div id='break-wrapper-outer'>
  <div class='row' id='break-wrapper'>
       <b:section id='break-section' maxwidgets='1' name='News Ticker' showaddelement='yes'>
-        <b:widget id='HTML2' locked='false' title='Latest News' type='HTML' visible='true'>
+        <b:widget id='HTML2' locked='false' title='Latest News' type='HTML' visible='false'>
           <b:widget-settings>
             <b:widget-setting name='content'>6/recent/ticker-posts</b:widget-setting>
           </b:widget-settings>
@@ -5775,7 +6062,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
       
     <div class='row' id='featured-wrapper'>
           <b:section class='featured-posts' id='featured-posts-2' maxwidgets='2' name='Featured Posts 01' showaddelement='yes'>
-            <b:widget id='HTML13' locked='false' title='Recommended For You' type='HTML' visible='true'>
+            <b:widget id='HTML13' locked='false' title='Recommended For You' type='HTML' visible='false'>
               <b:widget-settings>
                 <b:widget-setting name='content'>4/politics/grid-small</b:widget-setting>
               </b:widget-settings>
@@ -5786,7 +6073,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
   </div>
 </b:includable>
             </b:widget>
-            <b:widget id='HTML52' locked='false' title='Must read!!' type='HTML' visible='true'>
+            <b:widget id='HTML52' locked='false' title='Must read!!' type='HTML' visible='false'>
               <b:widget-settings>
                 <b:widget-setting name='content'>lifestyle/feat-big</b:widget-setting>
               </b:widget-settings>
@@ -5811,7 +6098,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
          <b:if cond='data:view.isHomepage'> 
          <div id='featured-wrapper'>
           <b:section class='featured-posts' id='featured-posts-1' maxwidgets='1' name='Featured Posts 02' showaddelement='yes'>
-            <b:widget id='HTML57' locked='false' title='Editor&apos;s Choice' type='HTML' visible='true'>
+            <b:widget id='HTML57' locked='false' title='Editor&apos;s Choice' type='HTML' visible='false'>
               <b:widget-settings>
                 <b:widget-setting name='content'>2/politics/feat-list</b:widget-setting>
               </b:widget-settings>
@@ -5825,39 +6112,12 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
           </b:section>
  <div class='clearfix'/>
     </div>
-            <div class='ad-wrapper'>
- <b:section class='home-ad-top' id='home-ad-top3' maxwidgets='1' name='Home Ads Top' showaddelement='yes'>
-   <b:widget id='HTML26' locked='false' title='Ad Code' type='HTML' visible='true'>
-     <b:widget-settings>
-       <b:widget-setting name='content'>&lt;a class=&quot;sora-ads-full&quot; href=&quot;javascript:;&quot;&gt;Responsive Advertisement&lt;/a&gt;
-&lt;style&gt;
-.sora-ads-full {
-  display: block;
-    background-color: #eee;
-    text-align: center;
-    font-size: 13px;
-    color: #aaaaaa;
-    font-weight: 400;
-    font-style: italic;
-    line-height: 90px;
-    border: 1px solid #ccc;
-}
-&lt;/style&gt;</b:widget-setting>
-     </b:widget-settings>
-     <b:includable id='main'>
-  <b:include name='widget-title'/>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-   </b:widget>
- </b:section>
-    </div>
+           
   <div class='clearfix'/>
         </b:if>
       <b:tag cond='data:view.isPost or data:view.isLayoutMode' id='custom-ads1' name='div'>
           <b:section cond='data:view.isPost' id='ty-post-before-ad' maxwidgets='1' name='Post ADS 1' showaddelement='yes'>
-            <b:widget id='HTML4' locked='false' title='Recent in Technology' type='HTML' visible='true'>
+            <b:widget id='HTML4' locked='false' title='Recent in Technology' type='HTML' visible='false'>
               <b:widget-settings>
                 <b:widget-setting name='content'><![CDATA[<a class="sora-ads-full" href="javascript:;">Responsive Advertisement</a>]]></b:widget-setting>
               </b:widget-settings>
@@ -5875,18 +6135,18 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
             <b:widget-settings>
               <b:widget-setting name='showDateHeader'>false</b:widget-setting>
               <b:widget-setting name='commentLabel'>Comments</b:widget-setting>
-              <b:widget-setting name='style.textcolor'>#acacac</b:widget-setting>
-              <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+              <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
+              <b:widget-setting name='showShareButtons'>false</b:widget-setting>
               <b:widget-setting name='authorLabel'>by</b:widget-setting>
               <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-              <b:widget-setting name='style.urlcolor'>#f7f8fa</b:widget-setting>
-              <b:widget-setting name='showAuthor'>true</b:widget-setting>
-              <b:widget-setting name='style.linkcolor'>#0af8c5</b:widget-setting>
+              <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
+              <b:widget-setting name='showAuthor'>false</b:widget-setting>
+              <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-              <b:widget-setting name='style.bgcolor'>#000000</b:widget-setting>
+              <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='timestampLabel'/>
               <b:widget-setting name='reactionsLabel'/>
-              <b:widget-setting name='showAuthorProfile'>true</b:widget-setting>
+              <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
               <b:widget-setting name='style.layout'>1x1</b:widget-setting>
               <b:widget-setting name='showLabels'>true</b:widget-setting>
               <b:widget-setting name='showLocation'>false</b:widget-setting>
@@ -5894,7 +6154,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
               <b:widget-setting name='showTimestamp'>true</b:widget-setting>
               <b:widget-setting name='postsPerAd'>1</b:widget-setting>
               <b:widget-setting name='showBacklinks'>false</b:widget-setting>
-              <b:widget-setting name='style.bordercolor'>#000000</b:widget-setting>
+              <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
               <b:widget-setting name='showInlineAds'>false</b:widget-setting>
               <b:widget-setting name='showReactions'>false</b:widget-setting>
             </b:widget-settings>
@@ -5915,20 +6175,19 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
 <b:include name='messagesJs'/>
             </b:includable>
             <b:includable id='aboutPostAuthor'>
-              <div class='about-author'>
-                <div class='avatar-container'>
-                  <b:if cond='data:post.author.authorPhoto.image'>
-                    <img class='author-avatar' expr:alt='data:post.author.name' expr:src='data:post.author.authorPhoto.image resizeImage 100'/>                
-                    <b:else/>
-                    <img class='author-avatar' expr:alt='data:post.author.name' src='https://4.bp.blogspot.com/-uCjYgVFIh70/VuOLn-mL7PI/AAAAAAAADUs/Kcu9wJbv790hIo83rI_s7lLW3zkLY01EA/s100/avatar.png'/>
-                  </b:if>
-                </div>
-                <h3 class='author-name'>
-                  <span><data:messages.postedBy/></span><a expr:alt='data:post.author.name' expr:href='data:post.author.profileUrl' target='_blank'> <data:post.author.name/></a>
-                </h3>
-                <span class='author-description'><data:post.author.aboutMe/></span>
-              </div>
-            </b:includable>
+  <div class='author-name'>
+    <a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'>
+      <span>
+        <data:post.author.name/>
+      </span>
+    </a>
+  </div>
+  <div>
+    <span class='author-desc'>
+      <data:post.author.aboutMe/>
+    </span>
+  </div>
+</b:includable>
             <b:includable id='addComments'>
               <a expr:href='data:post.commentsUrl' expr:onclick='data:post.commentsUrlOnclick'>
                 <b:message name='messages.postAComment'/>
@@ -6173,7 +6432,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
             <b:includable id='headerByline' var='post'>
               <!-- Post Header Meta -->
                 <div class='post-meta'>
-                  <b:include data='post' name='postAuthor'/>
+                  
                   <b:include data='post' name='postTimestamp'/>
                 </div>
             </b:includable>
@@ -6724,7 +6983,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
         </b:section>
         <b:tag cond='data:view.isPost or data:view.isLayoutMode' id='custom-ads2' name='div'>
           <b:section cond='data:view.isPost' id='ty-post-after-ad' maxwidgets='1' name='Post ADS 2' showaddelement='yes'>
-            <b:widget id='HTML5' locked='false' title='People' type='HTML' visible='true'>
+            <b:widget id='HTML5' locked='false' title='People' type='HTML' visible='false'>
               <b:widget-settings>
                 <b:widget-setting name='content'><![CDATA[<a class="sora-ads-full" href="javascript:;">Responsive Advertisement</a>]]></b:widget-setting>
               </b:widget-settings>
@@ -7014,7 +7273,6 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
   </span>
 </b:includable>
             <b:includable id='postReactions'>
-  <!-- Reaction feature no longer available. The includable is retained for backwards-compatibility. -->
 </b:includable>
             <b:includable id='postShareButtons'>
   <div class='byline post-share-buttons goog-inline-block'>
@@ -7118,13 +7376,14 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
           </b:widget>
         </b:section>
         <b:section class='sidebar' id='social-widget' maxwidgets='1' name='Social Widget' showaddelement='yes'>
-          <b:widget id='LinkList75' locked='true' title='Social Plugin' type='LinkList' version='2' visible='true'>
+          <b:widget id='LinkList75' locked='true' title='Social Plugin' type='LinkList' version='2' visible='false'>
             <b:widget-settings>
               <b:widget-setting name='text-9'>skype</b:widget-setting>
               <b:widget-setting name='link-9'>#</b:widget-setting>
               <b:widget-setting name='text-8'>whatsapp</b:widget-setting>
               <b:widget-setting name='link-7'>https://www.youtube.com/liveblogger</b:widget-setting>
               <b:widget-setting name='link-8'>#</b:widget-setting>
+              <b:widget-setting name='text-10'>discord</b:widget-setting>
               <b:widget-setting name='link-5'>#</b:widget-setting>
               <b:widget-setting name='link-6'>https://www.instagram.com/livebloggerofficial/</b:widget-setting>
               <b:widget-setting name='link-3'>#</b:widget-setting>
@@ -7141,6 +7400,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
               <b:widget-setting name='link-1'>https://twitter.com/LiveBlogger1</b:widget-setting>
               <b:widget-setting name='link-2'>#</b:widget-setting>
               <b:widget-setting name='link-0'>https://www.facebook.com/templatesyard/</b:widget-setting>
+              <b:widget-setting name='link-10'>https://discord.ncaanext.com</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
               <b:include name='widget-title'/>
@@ -7158,7 +7418,18 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
           </b:widget>
         </b:section>
         <b:section class='sidebar common-widget' id='sidebar2' name='Sidebar Right (B)' showaddelement='yes'>
-          <b:widget id='HTML1' locked='false' title='Subscribe Us' type='HTML' visible='true'>
+          <b:widget id='HTML8' locked='false' title='Discord' type='HTML' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='content'><![CDATA[<iframe src="https://discord.com/widget?id=938236373113122826&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>]]></b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+          </b:widget>
+          <b:widget id='HTML1' locked='false' title='Subscribe Us' type='HTML' version='2' visible='false'>
             <b:widget-settings>
               <b:widget-setting name='content'>&lt;div class=&quot;videoWrapper&quot;&gt;
     &lt;!-- Copy &amp; Pasted from YouTube --&gt;
@@ -7187,7 +7458,7 @@ height: 100%;
   </div>
 </b:includable>
           </b:widget>
-          <b:widget id='HTML6' locked='false' title='Facebook' type='HTML' visible='true'>
+          <b:widget id='HTML6' locked='false' title='Facebook' type='HTML' visible='false'>
             <b:widget-settings>
               <b:widget-setting name='content'><![CDATA[<center><div class="fb-page" data-href="https://www.facebook.com/templatesyard" data-width="360" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div></center>]]></b:widget-setting>
             </b:widget-settings>
@@ -7298,35 +7569,7 @@ height: 100%;
       </div>
   </div>
 
- <div class='clearfix'/>
- <div class='row ad-wrapper'>
- <b:section class='home-ad-top' id='home-ad-foot' maxwidgets='1' name='Home Ads Bottom' showaddelement='yes'>
-   <b:widget id='HTML22' locked='false' title='Ad Code' type='HTML' visible='true'>
-     <b:widget-settings>
-       <b:widget-setting name='content'>&lt;a class=&quot;sora-ads-full&quot; href=&quot;javascript:;&quot;&gt;Responsive Advertisement&lt;/a&gt;
-&lt;style&gt;
-.sora-ads-full {
-  display: block;
-    background-color: #eee;
-    text-align: center;
-    font-size: 13px;
-    color: #aaaaaa;
-    font-weight: 400;
-    font-style: italic;
-    line-height: 90px;
-    border: 1px solid #ccc;
-}
-&lt;/style&gt;</b:widget-setting>
-     </b:widget-settings>
-     <b:includable id='main'>
-  <b:include name='widget-title'/>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-   </b:widget>
- </b:section>
-    </div>
+ 
   <div class='clearfix'/>
   <b:if cond='data:view.isHomepage'>
    
@@ -7334,7 +7577,7 @@ height: 100%;
   <div class='black-feat'>
  <div class='row' id='featured-wrapper'>
           <b:section class='featured-posts' id='featured-posts-3' maxwidgets='1' name='Featured Posts 03' showaddelement='yes'>
-            <b:widget id='HTML11' locked='false' title='Most Popular' type='HTML' version='2' visible='true'>
+            <b:widget id='HTML11' locked='false' title='Most Popular' type='HTML' version='2' visible='false'>
               <b:widget-settings>
                 <b:widget-setting name='content'>6/social/grid-big</b:widget-setting>
               </b:widget-settings>
@@ -7351,7 +7594,7 @@ height: 100%;
     </div>
     <div class='row' id='featured-wrapper'>
       <b:section class='featured-posts' id='featured-posts-4' maxwidgets='2' name='Featured Posts 04' showaddelement='yes'>
-        <b:widget id='HTML72' locked='false' title='Must read!!' type='HTML' visible='true'>
+        <b:widget id='HTML72' locked='false' title='Must read!!' type='HTML' visible='false'>
           <b:widget-settings>
             <b:widget-setting name='content'>lifestyle/feat-big</b:widget-setting>
           </b:widget-settings>
@@ -7372,7 +7615,36 @@ height: 100%;
 <div class='container row'>
     <div class='footer-widgets-wrap'>
       <b:section class='footer common-widget' id='footer-sec1' maxwidgets='3' name='Section (Left)' showaddelement='yes'>
-        <b:widget id='HTML3' locked='false' title='Random Posts' type='HTML' visible='true'>
+        <b:widget id='BlogSearch1' locked='false' title='Search This Blog' type='BlogSearch' visible='true'>
+          <b:includable id='main' var='this'>
+      <b:include name='widget-title'/>
+      <b:include name='content'/>
+    </b:includable>
+          <b:includable id='content'>
+      <div class='widget-content' role='search'>
+        <form class='search-form' expr:action='data:blog.searchUrl'>
+          <b:attr cond='not data:view.isPreview' name='target' value='_top'/>
+          <b:include name='urlParamsAsFormInput'/>
+          <input autocomplete='off' class='search-input' expr:aria-label='data:messages.searchThisBlog' expr:placeholder='data:messages.searchThisBlog' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' name='q'/>
+          <input class='search-action' expr:value='data:messages.search.escaped' type='submit'/>  
+        </form>
+      </div>
+    </b:includable>
+          <b:includable id='searchForm'>
+  <form expr:action='data:blog.searchUrl'>
+    <b:attr cond='not data:view.isPreview' name='target' value='_top'/>
+    <b:include name='urlParamsAsFormInput'/>
+    <div class='search-input'>
+      <input autocomplete='off' expr:aria-label='data:messages.searchThisBlog' expr:placeholder='data:messages.searchThisBlog' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' name='q'/>
+    </div>
+    <b:include name='searchSubmit'/>
+  </form>
+</b:includable>
+          <b:includable id='searchSubmit'>
+  <input class='search-action' expr:value='data:messages.search.escaped' type='submit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML3' locked='false' title='Random Posts' type='HTML' visible='false'>
           <b:widget-settings>
             <b:widget-setting name='content'>3/random/post-list</b:widget-setting>
           </b:widget-settings>
@@ -7391,7 +7663,7 @@ height: 100%;
             <b:widget-setting name='showPostTitle'>true</b:widget-setting>
             <b:widget-setting name='postId'>5162191140436806662</b:widget-setting>
             <b:widget-setting name='showFirstImage'>true</b:widget-setting>
-            <b:widget-setting name='useMostRecentPost'>false</b:widget-setting>
+            <b:widget-setting name='useMostRecentPost'>true</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
@@ -8033,12 +8305,12 @@ height: 100%;
       <b:widget id='LinkList76' locked='true' title='Footer Menu Widget' type='LinkList' version='2' visible='true'>
         <b:widget-settings>
           <b:widget-setting name='sorting'>NONE</b:widget-setting>
-          <b:widget-setting name='text-1'>About</b:widget-setting>
-          <b:widget-setting name='link-1'>https://vibeblog-templatesyard.blogspot.com/p/about-us.html</b:widget-setting>
+          <b:widget-setting name='text-1'>Download</b:widget-setting>
+          <b:widget-setting name='link-1'>https://www.ncaanext.com/p/download_23.html</b:widget-setting>
           <b:widget-setting name='text-0'>Home</b:widget-setting>
-          <b:widget-setting name='link-2'>https://vibeblog-templatesyard.blogspot.com/p/contact-us_27.html</b:widget-setting>
+          <b:widget-setting name='link-2'>https://www.ncaanext.com/p/faq.html</b:widget-setting>
           <b:widget-setting name='link-0'>/</b:widget-setting>
-          <b:widget-setting name='text-2'>Contact Us</b:widget-setting>
+          <b:widget-setting name='text-2'>FAQ</b:widget-setting>
         </b:widget-settings>
         <b:includable id='main'>
           <b:include name='widget-title'/>
@@ -8055,7 +8327,11 @@ height: 100%;
         </b:includable>
       </b:widget>
     </b:section>
-    <div class='copyright-area'>Copyright &#169; <script type='text/javascript'>var year = new Date();document.write(year.getFullYear());</script> <a expr:href='data:blog.homepageUrl'><data:blog.title/></a>
+    <div class='copyright-area'>
+      <a href='https://github.com/h4wduk3n/NCAA06Next' style='display:flex;align-items: center;'>
+      		<svg height='24' role='img' style='fill: #fff;margin-right:10px' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><title>GitHub</title><path d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/></svg>
+      <data:blog.title/> Github 
+      </a>
     </div>
   </div>
   </div>
