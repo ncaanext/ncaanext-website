@@ -2159,9 +2159,9 @@ border-width: 0 0 1px 0;
 }
  .custom-widget .post-title{
     overflow:hidden;
-    font-size:15px;
+    font-size:1.15rem;
     font-weight:400;
-    line-height:1.5;
+    line-height:1.25;
     margin:0
 }
  .custom-widget .post-title a{
@@ -2426,8 +2426,8 @@ a.read-more span {
 }
  .item-post .post-body{
     width:100%;
-    font-size:15px;
-    line-height:1.6em;
+    // font-size:15px;
+    line-height:1.5em;
     overflow:hidden;
     box-sizing:border-box;
     padding:20px 0 0;
@@ -2738,9 +2738,9 @@ opacity: 1;
     border-radius:3px
 }
  .related-posts .post-title{
-    font-size:15px;
+    font-size:1.15rem;
     font-weight:400;
-    line-height:1.5;
+    line-height:1.25;
     display:block;
     margin:0
 }
@@ -2761,7 +2761,7 @@ opacity: 1;
  #blog-pager{
     float:left;
     width:100%;
-    font-size:15px;
+    font-size:1.15rem;
     font-weight:500;
     text-align:center;
     clear:both;
@@ -3419,9 +3419,9 @@ border-bottom:2px solid $(main.dark.color);
     overflow:hidden
 }
  .PopularPosts .post-title{
-    font-size:15px;
+    font-size:1.15rem;
     font-weight:400;
-    line-height:1.5;
+    line-height:1.25;
     margin:0
 }
  .PopularPosts .post-title a{
@@ -4483,7 +4483,7 @@ ul.grid-small, ul.grid-big {
         margin:0 12px 0 0
     }
      .related-posts .post-title{
-        font-size:15px;
+        font-size:1.15rem;
         overflow:hidden;
         margin:0 0 5px
     }
