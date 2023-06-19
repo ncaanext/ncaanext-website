@@ -4033,7 +4033,7 @@ ul.grid-big{
     width:100%;
     overflow:hidden;
     background-color:$(footer.bg);
-    padding:0;
+    padding: 25px 0;
 }
  #footer-wrapper .container{
     overflow:hidden;
@@ -4082,6 +4082,8 @@ ul.grid-big{
     /* height:30px; */
     line-height:1.25;
     font-size:1.2rem;
+    font-family: 'Graduate';
+    text-transform: uppercase;
     color:$(footer.color);
     margin:0
 }
