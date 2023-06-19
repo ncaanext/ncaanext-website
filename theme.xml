@@ -1119,8 +1119,7 @@ font-weight:900;
 }
  .mobile-menu ul li.has-sub .submenu-toggle{
     position:absolute;
-    top:0;
-    right:0;
+    inset: 0;
     color:#ffffff;
     cursor:pointer
 }
@@ -5831,7 +5830,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
               <b:widget-setting name='text-12'>_YouTube Tutorial</b:widget-setting>
               <b:widget-setting name='text-13'>Guides</b:widget-setting>
               <b:widget-setting name='text-14'>_Dynasty Guide</b:widget-setting>
-              <b:widget-setting name='text-10'>_Emulator Set-Up</b:widget-setting>
+              <b:widget-setting name='text-10'>_Setup Guide</b:widget-setting>
               <b:widget-setting name='link-17'>#</b:widget-setting>
               <b:widget-setting name='link-16'>https://www.playbookgamer.com</b:widget-setting>
               <b:widget-setting name='link-19'>https://www.ncaanext.com/p/fantasy-roster-generator.html</b:widget-setting>
@@ -5846,10 +5845,10 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
               <b:widget-setting name='link-14'>https://www.ncaanext.com/p/ncaa-next-dynasty-game-guide.html</b:widget-setting>
               <b:widget-setting name='link-11'>https://www.ncaanext.com/p/ncaa-next-iso-mod-creation.html</b:widget-setting>
               <b:widget-setting name='link-10'>https://www.ncaanext.com/p/set-up-guide.html</b:widget-setting>
-              <b:widget-setting name='link-9'>https://www.ncaanext.com/p/set-up-guide.html</b:widget-setting>
+              <b:widget-setting name='link-9'>#</b:widget-setting>
               <b:widget-setting name='link-7'>https://www.ncaamod.com/textures/</b:widget-setting>
               <b:widget-setting name='link-8'>https://www.ncaanext.com/p/ncaa-next-betas.html</b:widget-setting>
-              <b:widget-setting name='link-5'>https://www.ncaanext.com/p/download_23.html</b:widget-setting>
+              <b:widget-setting name='link-5'>#</b:widget-setting>
               <b:widget-setting name='link-6'>https://www.ncaanext.com/p/download_23.html</b:widget-setting>
               <b:widget-setting name='link-3'>https://github.com/h4wduk3n/NCAA06Next</b:widget-setting>
               <b:widget-setting name='link-4'>https://discord.ncaanext.com</b:widget-setting>
