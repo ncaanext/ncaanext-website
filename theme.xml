@@ -1995,7 +1995,7 @@ color:$(main.color)
 }
 
  .hot-posts .post-meta, .PopularPosts .hot-posts .post-meta{
-    font-size:11px;
+    font-size:0.85rem;
     color:#afafaf
 }
 .PopularPosts .hot-posts .post-info .post-meta .post-date {
@@ -2603,7 +2603,7 @@ a.read-more span {
 }
  .post-nav li span{
     display:block;
-    font-size:11px;
+    font-size:0.85rem;
     color:#aaa;
     font-weight:500;
     text-transform:uppercase;
@@ -2749,7 +2749,7 @@ opacity: 1;
     transition:color .17s
 }
  .related-posts .post-meta .post-date, .custom-widget li .post-meta .post-date, .PopularPosts .post-info .post-meta .post-date {
-    font-size:11px;
+    font-size:0.85rem;
     margin:8px 0 0
 }
 .custom-widget li .post-meta .post-date, .PopularPosts .post-info .post-meta .post-date {
@@ -3004,7 +3004,7 @@ border:0;
 }
  .comments .comments-content .datetime{
     float:left;
-    font-size:11px;
+    font-size:0.85rem;
     font-weight:400;
     color:#aaa;
     position:relative;
@@ -3257,7 +3257,7 @@ border-bottom:2px solid $(main.dark.color);
  .list-label .label-count{
     position:relative;
     float:right;
-    font-size:11px;
+    font-size:0.85rem;
     font-weight:400;
     text-align:center;
     line-height:16px
@@ -3320,7 +3320,7 @@ border-bottom:2px solid $(main.dark.color);
     width:100%;
     height:32px;
     color:$(title.color);
-    font-size:11px;
+    font-size:0.85rem;
     font-family:inherit;
     padding:0 10px;
     margin:0 0 10px;
@@ -3333,7 +3333,7 @@ border-bottom:2px solid $(main.dark.color);
     width:100%;
     height:32px;
     font-family:inherit;
-    font-size:11px;
+    font-size:0.85rem;
     color:#fff;
     background-color:$(main.color);
     text-transform:uppercase;
@@ -3388,7 +3388,7 @@ border-bottom:2px solid $(main.dark.color);
     height:16px;
     background-color:$(main.color);
     color:#fff;
-    font-size:11px;
+    font-size:0.85rem;
     font-weight:400;
     text-align:center;
     line-height:16px
@@ -3540,7 +3540,7 @@ border-bottom:2px solid $(main.dark.color);
     float:left;
     width:100%;
     background-color:#fbe5e5;
-    font-size:11px;
+    font-size:0.85rem;
     text-align:center;
     line-height:11px;
     padding:3px 0;
@@ -3552,7 +3552,7 @@ border-bottom:2px solid $(main.dark.color);
     float:left;
     width:100%;
     background-color:#eaf6ff;
-    font-size:11px;
+    font-size:0.85rem;
     text-align:center;
     line-height:11px;
     padding:3px 0;
@@ -3623,7 +3623,7 @@ border-bottom:2px solid $(main.dark.color);
 }
  .Profile .profile-info > .profile-link{
     color:$(title.color);
-    font-size:11px;
+    font-size:0.85rem;
     margin:5px 0 0;
     transition:color .17s ease
 }
@@ -4049,8 +4049,8 @@ ul.grid-big{
  .footer .widget > .widget-title > h3{
     position:relative;
     text-align:left;
-    height:30px;
-    line-height:30px;
+    // height:30px;
+    line-height:1.25;
     font-size:16px;
     color:$(footer.color);
     margin:0
@@ -4160,7 +4160,7 @@ ul.grid-big{
     margin:0
 }
  #menu-footer ul li a{
-    font-size:11px;
+    font-size:0.85rem;
     font-weight:500;
     display:block;
     color:$(footer.color);
