@@ -4616,7 +4616,7 @@ a.next-button.icon svg {
 }
 #next-hero-wrapper-outer {
   background-color: #1a1a1a;
-  background-image: url('https://raw.githubusercontent.com/j26w/nccanext-website/main/assets/images/bg-turf.jpg');
+  background-image: url('https://raw.githubusercontent.com/ncaanext/ncaanext-website/main/assets/images/bg-turf.jpg');
 }
 
 .next-hero {
@@ -4634,7 +4634,7 @@ a.next-button.icon svg {
   background-color: #1a1a1a;
   background-size: cover;
   background-position: 50%;
-  background-image: url('https://github.com/j26w/nccanext-website/blob/main/assets/images/hero-image.jpg?raw=true');
+  background-image: url('https://raw.githubusercontent.com/ncaanext/ncaanext-website/blob/main/assets/images/hero-image.jpg');
 }
 
 .next-hero--content {
@@ -5534,7 +5534,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
     <b:include data='blog' name='google-analytics'/>
 
     <!-- Custom CSS Styling -->
-    <link href='https://raw.githubusercontent.com/j26w/nccanext-website/main/assets/css/style.css' rel='stylesheet'/>
+    <link href='https://raw.githubusercontent.com/ncaanext/ncaanext-website/main/assets/css/style.css' rel='stylesheet'/>
 
 
 </head>
@@ -5945,7 +5945,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
     
     <div class='next-hero--content'>
 
-      <img src='https://raw.githubusercontent.com/j26w/nccanext-website/main/assets/images/logo-ncaa-next-annual-23.png' width='500'/>
+      <img src='https://raw.githubusercontent.com/ncaanext/ncaanext-website/main/assets/images/logo-ncaa-next-annual-23.png' width='500'/>
      <p class='lead'>The Next Evolution of NCAA &#39;06</p> 
       
       <p class='body'>
@@ -5972,7 +5972,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
     <div>
       <div class='next-card'>
        <div class='image'>
-         <img src='https://raw.githubusercontent.com/j26w/nccanext-website/main/assets/images/hero-box-1.jpg'/>
+         <img src='https://raw.githubusercontent.com/ncaanext/ncaanext-website/main/assets/images/hero-box-1.jpg'/>
         </div>
         <div class='content'>
           <h3>Ultra Hi-Res 4K Textures</h3>
@@ -5984,7 +5984,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
     <div>
       <div class='next-card'>
        <div class='image'>
-         <img src='https://raw.githubusercontent.com/j26w/nccanext-website/main/assets/images/hero-box-2-v03.jpg'/>
+         <img src='https://raw.githubusercontent.com/ncaanext/ncaanext-website/main/assets/images/hero-box-2-v03.jpg'/>
         </div>
         <div class='content'>
           <h3>Modern College Football Format</h3>
@@ -5998,7 +5998,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
    <div>
       <div class='next-card'>
        <div class='image'>
-         <img src='https://raw.githubusercontent.com/j26w/nccanext-website/main/assets/images/hero-box-3-v02.jpg'/>
+         <img src='https://raw.githubusercontent.com/ncaanext/ncaanext-website/main/assets/images/hero-box-3-v02.jpg'/>
         </div>
         <div class='content'>
           <h3>Classic &#39;06 Gameplay</h3>
