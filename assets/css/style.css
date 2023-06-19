@@ -1,7 +1,10 @@
-/*------ CUSTOM STYLING ---------- */
-/* This is not referenced by the theme.
-   This is only for doing dev work in Codepen. 
+/*------------------------------------ 
+   This is not referenced by the theme.
+   All theme styling should be done in-line in theme.xml, 
+   but can work in this to have better syntax highlighting, 
+   transfer to theme.xml.
 ------------------------------------*/
+/*------ CUSTOM STYLING ---------- */
 * {
   box-sizing: border-box;
 }
