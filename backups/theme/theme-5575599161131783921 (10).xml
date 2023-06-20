@@ -3150,13 +3150,13 @@ border:0;
  .post-body ul{
     padding:0 0 0 20px
 }
-/* .post-body ul li:before{
+ .post-body ul li:before{
     content:"\f105";
    font-family:'Font Awesome 5 Free';
     font-size:1rem;
     font-weight:900;
     margin:0 5px 0 0
-} */
+}
  .post-body u{
     text-decoration:underline
 }
@@ -4855,7 +4855,7 @@ a.next-button.icon svg {
     content:&#39;\2022&#39;;
     margin:0 5px 0 0
 }
-/* .post-body ol{
+ .post-body ol{
     counter-reset:ify;
     padding:0 0 0 15px;
     margin:10px 0
@@ -4863,12 +4863,12 @@ a.next-button.icon svg {
  .post-body ol &gt; li{
     counter-increment:ify;
     list-style:none
-} 
+}
  .post-body ol &gt; li:before{
     display:inline-block;
     content:counters(ify,&#39;.&#39;)&#39;.&#39;;
     margin:0 5px 0 0
-} */
+}
  .post-body u{
     text-decoration:underline
 }
