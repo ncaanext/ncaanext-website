@@ -1129,9 +1129,12 @@ font-weight:900;
 }
  .mobile-menu ul li.has-sub .submenu-toggle{
     position:absolute;
-    inset: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
     color:#ffffff;
-    cursor:pointer
+    cursor:pointer;
+    height: 38px;
 }
  .mobile-menu ul li.has-sub .submenu-toggle:after{
     content:'\f105';
@@ -1334,10 +1337,12 @@ transform:scaleY(1)
 }
  .mobile-menu ul li.has-sub .submenu-toggle{
     position:absolute;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
+    width: 100%;
     color:#ffffff;
-    cursor:pointer
+    cursor:pointer;
+    height: 38px;
 }
  .mobile-menu ul li.has-sub .submenu-toggle:after{
     content:'\f105';
