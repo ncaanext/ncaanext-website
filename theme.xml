@@ -4795,6 +4795,11 @@ a.next-button.icon svg {
     height: 100%;
 }
 
+/* Full width main content section on the custom covers page */
+#main-wrapper.fullwidth {
+  width: 100%
+}
+
 /* ------- END CUSTOM STYLING ----------- */
 
 
@@ -6165,7 +6170,7 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
     <div class='container'>
 
       <!-- Main Wrapper -->
-      <div id='main-wrapper'>
+      <div id='main-wrapper' expr:class='data:blog.url == data:blog.homepageUrl + &quot;p/custom-covers.html&quot; || data:blog.url == data:blog.homepageUrl + &quot;p/media.html&quot; ? &quot;fullwidth&quot; : &quot;&quot;'>
          <b:if cond='data:view.isHomepage'> 
          <div id='featured-wrapper'>
           <b:section class='featured-posts' id='featured-posts-1' maxwidgets='1' name='Featured Posts 02' showaddelement='yes'>
@@ -7069,9 +7074,10 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
         </b:tag>
       </div>
 
+      <b:if cond='data:blog.url != data:blog.homepageUrl + &quot;p/custom-covers.html&quot; &amp;&amp; data:blog.url != data:blog.homepageUrl + &quot;p/media.html&quot; '>
       <!-- Sidebar Wrapper -->
       <div id='sidebar-wrapper'>
-
+        
         <b:section class='sidebar' id='social-widget' maxwidgets='1' name='Social Widget' showaddelement='yes'>
           <b:widget id='LinkList75' locked='true' title='Community' type='LinkList' version='2' visible='true'>
             <b:widget-settings>
@@ -7633,9 +7639,11 @@ height: 100%;
 </b:includable>
           </b:widget>
         </b:section>
-        </div>
-       <div class='clearfix'/>
       </div>
+      </b:if>
+       <div class='clearfix'/>
+      </div><!-- END sidebar wrapper-->
+      
   </div>
 
  
